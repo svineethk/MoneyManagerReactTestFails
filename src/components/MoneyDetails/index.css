@@ -1,0 +1,109 @@
+/* Write your CSS here */
+
+.balance-container {
+  height: 200px;
+  width: auto;
+  background-color: #ecfccb;
+  border-color: #84cc16;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.balance-image-container {
+  height: 200px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance-display-container {
+  font-family: Roboto;
+  font-size: 25px;
+  height: 200px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.balance-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.income-container {
+  height: 200px;
+  width: auto;
+  background-color: #cffafe;
+  border-color: #06b6d4;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.income-image-container {
+  height: 200px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.income-display-container {
+  font-family: Roboto;
+  font-size: 25px;
+  height: 200px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.income-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.expense-container {
+  height: 200px;
+  width: auto;
+  background-color: #ede9fe;
+  border-color: #7c3aed;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.expense-image-container {
+  height: 200px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expense-display-container {
+  font-family: Roboto;
+  font-size: 25px;
+  height: 200px;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.expense-logo {
+  height: 100px;
+  width: 100px;
+}

@@ -1,0 +1,45 @@
+/* Write your CSS here */
+.each-type-container {
+  height: 40px;
+  width: 520px;
+  border-color: #cbd5e1;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.each-type-header {
+  width: 20%;
+  font-size: 20px;
+  color: #334155;
+  font-family: Roboto;
+}
+
+.each-type-headers {
+  width: 20%;
+  font-size: 20px;
+  color: #334155;
+  font-family: Roboto;
+  margin-left: 60px;
+}
+
+.button {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.delete-button {
+  height: 25px;
+  width: 25px;
+}
+
+li {
+  list-style-type: none;
+}
