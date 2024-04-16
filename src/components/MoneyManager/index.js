@@ -40,11 +40,17 @@ class MoneyManager extends Component {
     event.preventDefault()
     const {title, amount, optionType} = this.state
 
+    const typeList = transactionTypeOptions.find(
+      eachTransaction => eachTransaction.optionId === optionType,
+    )
+
+    const {displayText} = typeList
+
     const newTransaction = {
       id: uuidv4(),
       title,
       amount,
-      optionType,
+      type: displayText,
     }
 
     this.setState(prevState => ({
@@ -111,7 +117,7 @@ class MoneyManager extends Component {
   }
 
   render() {
-    const {TransactionList, title, amount} = this.state
+    const {TransactionList, title, amount, optionType} = this.state
     const BalanceAmount = this.getBalanceAmount()
     const IncomeAmount = this.getIncomeAmount()
     const ExpenseAmount = this.getExpenseAmount()
@@ -159,13 +165,13 @@ class MoneyManager extends Component {
               id="selectType"
               className="inputs"
               onChange={this.onChangeType}
+              value={optionType}
             >
-              <option value={transactionTypeOptions[0].optionId}>
-                {transactionTypeOptions[0].displayText}
-              </option>
-              <option value={transactionTypeOptions[1].optionId}>
-                {transactionTypeOptions[1].displayText}
-              </option>
+              {transactionTypeOptions.map(eachType => (
+                <option key={eachType.optionId} value={eachType.optionId}>
+                  {eachType.displayText}
+                </option>
+              ))}
             </select>
             <button type="submit" className="add-button">
               Add

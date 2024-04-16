@@ -3,7 +3,7 @@ import './index.css'
 
 const TransactionItem = props => {
   const {eachTransaction, onDeleteItem} = props
-  const {id, title, amount, optionType} = eachTransaction
+  const {id, title, amount, type} = eachTransaction
 
   const onDeleteClicked = () => {
     onDeleteItem(id)
@@ -13,7 +13,7 @@ const TransactionItem = props => {
     <li className="each-type-container">
       <p className="each-type-header">{title}</p>
       <p className="each-type-headers">{amount}</p>
-      <p className="each-type-headers">{optionType}</p>
+      <p className="each-type-headers">{type}</p>
       <button
         type="button"
         className="button"
